@@ -1,0 +1,15 @@
+.card {
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid #000
+}
+
+.card__header {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+}
+
+.card__content {
+  color: darkblue;
+}

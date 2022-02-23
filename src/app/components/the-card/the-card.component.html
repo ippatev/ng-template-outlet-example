@@ -1,0 +1,15 @@
+<div class="card">
+  <ng-template #defaultHeader>
+    <header class="card__header">
+      {{ title }}
+    </header>
+  </ng-template>
+  <ng-container
+    [ngTemplateOutlet]="customFields || defaultHeader"
+    [ngTemplateOutletContext]="{ $implicit: title}"
+  ></ng-container>
+
+  <body class="card__content">
+    {{ content }}
+  </body>
+</div>
