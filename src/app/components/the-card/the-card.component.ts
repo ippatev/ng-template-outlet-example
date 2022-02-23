@@ -27,7 +27,7 @@ export class TheCardComponent implements OnInit, AfterViewInit {
   @ContentChild('defaultHeader') defaultHeader: TemplateRef<unknown>;
 
   // @ts-ignore
-  @ContentChildren(TemplateRef, {static: true, read: TemplateRef}) childrens: QueryList<TemplateRef>[]
+  @ContentChildren(TemplateRef, {static: true, read: TemplateRef}) children: QueryList<TemplateRef>[]
 
   constructor() { }
 
@@ -35,7 +35,7 @@ export class TheCardComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     // @ts-ignore
-    this.childrens.map((query: TemplateRef<unknown>) => {
+    this.children.map((query: TemplateRef<unknown>) => {
       // @ts-ignore
       const name = query._declarationTContainer.localNames[0]
 
