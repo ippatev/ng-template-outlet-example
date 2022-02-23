@@ -9,10 +9,10 @@ const template = `
            </header>
          </ng-template>
     </app-the-card>
-    <app-the-card title="hello too" content="hello" headerTemplateName="heart">
+    <app-the-card title="hello" content="hello" headerTemplateName="heart">
          <ng-template #heart let-title>
            <header class="custom-card__header">
-            <span>❤</span> {{ title }}
+            <span>❤</span> {{ title }} <span>❤</span>
            </header>
          </ng-template>
     </app-the-card>
