@@ -4,8 +4,9 @@
       {{ title }}
     </header>
   </ng-template>
+
   <ng-container
-    [ngTemplateOutlet]="customFields || defaultHeader"
+    [ngTemplateOutlet]="template || defaultHeader"
     [ngTemplateOutletContext]="{ $implicit: title}"
   ></ng-container>
 

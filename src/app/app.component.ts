@@ -2,8 +2,15 @@ import { Component } from '@angular/core';
 
 const template = `
   <div class="flex">
-    <app-the-card title="hello" content="hello" headerTemplateName="heartHeader">
+    <app-the-card title="hello" content="hello" headerTemplateName="custom">
          <ng-template #custom let-title>
+           <header class="custom-card__header">
+            {{ title }} World!
+           </header>
+         </ng-template>
+    </app-the-card>
+    <app-the-card title="hello too" content="hello" headerTemplateName="heart">
+         <ng-template #heart let-title>
            <header class="custom-card__header">
             <span>❤</span> {{ title }}
            </header>
